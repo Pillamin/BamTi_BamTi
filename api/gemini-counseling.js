@@ -68,7 +68,7 @@ ${teacherConcern}
 위 정보를 바탕으로 상담 전략을 제안해주세요.`;
 
   // Gemini REST API 호출 (gemini-2.5-pro 모델, 내장 fetch 사용)
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`;
 
   try {
     const response = await fetch(url, {
