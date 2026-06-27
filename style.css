@@ -348,6 +348,224 @@ button {
   font-size: 14px;
 }
 
+/* ── 학생 카드 상담 버튼 ── */
+.counseling-request-btn {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  min-height: 38px;
+  border-radius: 6px;
+  border: 1px solid var(--primary);
+  padding: 0 14px;
+  background: #eef2ff;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.counseling-request-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* ── AI 상담 전략 도우미 패널 ── */
+.counseling-panel {
+  margin-top: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.counseling-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 22px 14px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), transparent 60%);
+}
+
+.counseling-panel-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.counseling-panel-body {
+  padding: 22px;
+  display: grid;
+  gap: 18px;
+}
+
+/* 선택된 학생 표시 */
+.selected-student-info {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-strong);
+}
+
+.selected-student-info p {
+  margin: 4px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.selected-student-info strong {
+  color: var(--primary-dark);
+}
+
+.selected-student-label {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+/* 교사 고민 입력 */
+.counseling-textarea {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: #ffffff;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.counseling-textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.13);
+}
+
+.counseling-textarea::placeholder {
+  color: var(--muted);
+}
+
+/* 전송 데이터 미리보기 */
+.preview-section {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.preview-section summary {
+  padding: 10px 16px;
+  background: var(--surface-strong);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.preview-section pre {
+  margin: 0;
+  padding: 14px 16px;
+  background: #f9fafb;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* AI 상담 전략 받기 버튼 */
+.counseling-submit-btn {
+  min-height: 44px;
+  border-radius: 6px;
+  border: none;
+  padding: 0 20px;
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.counseling-submit-btn:hover {
+  background: var(--primary-dark);
+}
+
+.counseling-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 결과/오류/로딩 영역 */
+.counseling-result {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f0f9ff;
+  font-size: 15px;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.counseling-result h2 {
+  font-size: 17px;
+  margin: 20px 0 8px;
+  color: var(--primary-dark);
+}
+
+.counseling-result h2:first-child {
+  margin-top: 0;
+}
+
+.counseling-error {
+  padding: 12px 16px;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  background: #fef2f2;
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.counseling-loading {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-strong);
+  color: var(--muted);
+  font-weight: 700;
+  text-align: center;
+}
+
+.counseling-disclaimer {
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: var(--amber);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* 라벨 */
+.field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
 .hidden {
   display: none !important;
 }

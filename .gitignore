@@ -1,0 +1,7 @@
+# 환경 변수 파일 – GitHub에 올리지 않는다
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
